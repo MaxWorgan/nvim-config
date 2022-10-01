@@ -22,7 +22,7 @@ dashboard.section.buttons.val = {
   dashboard.button("q", " " .. " Quit", ":qa<CR>"),
 }
 local function footer()
-  return "chrisatmachine.com"
+  return "com"
 end
 
 dashboard.section.footer.val = footer()
@@ -32,4 +32,4 @@ dashboard.section.header.opts.hl = "Include"
 dashboard.section.buttons.opts.hl = "Keyword"
 
 dashboard.opts.opts.noautocmd = true
-alpha.setup(dashboard.opts)
+alpha.setup(require'alpha.themes.startify'.config)
